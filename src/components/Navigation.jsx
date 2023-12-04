@@ -10,10 +10,10 @@ const Navigation = () => {
   ];
   const [active, setActive] = useState(0);
   return (
-    <div className="bg-white max-h-[4.4rem] px-6 rounded-t-xl">
+    <div className="bg-gray-900 fixed bottom-0 w-full px-6 rounded-t-xl items-center flex">
       <ul className="flex relative">
         <span
-          className={`bg-rose-600 duration-500 ${Menus[active].dis} border-4 border-gray-900 h-16 w-16 absolute
+          className={`bg-cyan-500 duration-500 ${Menus[active].dis} border-4 border-white h-16 w-16 absolute
          -top-5 rounded-full`}
         >
           <span
@@ -32,14 +32,14 @@ const Navigation = () => {
               onClick={() => setActive(i)}
             >
               <span
-                className={`text-xl cursor-pointer duration-500 ${
+                className={`text-xl text-white cursor-pointer duration-500 ${
                   i === active && "-mt-6 text-white"
                 }`}
               >
                 <ion-icon name={menu.icon}></ion-icon>
               </span>
               <span
-                className={` ${
+                className={` text-white ${
                   active === i
                     ? "translate-y-4 duration-700 opacity-100"
                     : "opacity-0 translate-y-10"

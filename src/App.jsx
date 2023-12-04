@@ -1,11 +1,14 @@
 import React from "react";
-import Navigation from "./components/Navigation";
+import Navigation from "@/components/Navigation";
 const App = () => {
   return (
-    <div className="h-screen flex justify-center items-center bg-gray-900">
+    <div className="">
       <Navigation />
     </div>
   );
 };
 
 export default App;
+
+// http://localhost:2000/
+// runing server
